@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "slug": "single-posts", "label": "Daily Posts", "longLabel": "Daily Posts / Single-Post Designs", "layout": "single" },
+    { "slug": "carousels", "label": "Carousel Posts", "longLabel": "Carousel Posts", "layout": "carousel" },
+    { "slug": "web-banners", "label": "Website Banners", "longLabel": "Website Banners", "layout": "banner" },
+    { "slug": "videos", "label": "Videos & Reels", "longLabel": "Videos & Reels", "layout": "video" },
+    { "slug": "campaigns", "label": "Campaigns & Offers", "longLabel": "Campaigns & Offers", "layout": "campaign" }
+  ]
+}

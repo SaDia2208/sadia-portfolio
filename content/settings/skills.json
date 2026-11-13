@@ -1,0 +1,48 @@
+{
+  "groups": [
+    {
+      "title": "Visual Design",
+      "skills": [
+        "Social Media Graphic Design",
+        "Figma — Social Media Poster Design",
+        "Canva",
+        "Single-Post Design",
+        "Carousel Design",
+        "Website Banner Design",
+        "Promotional Campaign Creatives",
+        "Product-Focused Social Media Content",
+        "Bengali and English Social Media Creatives"
+      ]
+    },
+    {
+      "title": "Video & Content",
+      "skills": [
+        "AI-Assisted Video Editing",
+        "Short-Form Video Content",
+        "Social Media Reels",
+        "Branded Promotional Content"
+      ]
+    },
+    {
+      "title": "Marketing & E-commerce",
+      "skills": [
+        "Social Media Content Creation",
+        "Social Media Content Management",
+        "Shopify Product Listings",
+        "Product Listing & Inventory Management",
+        "Amazon Seller Central",
+        "Amazon Vendor Central",
+        "Zoho Inventory"
+      ]
+    },
+    {
+      "title": "Additional Software",
+      "skills": [
+        "MS Word",
+        "MS Excel",
+        "Microsoft PowerPoint",
+        "Basic MySQL"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Care for nature while you travel",
+  "image": "/assets/tourmatez/single-posts/care-for-nature.webp",
+  "alt": "Bengali poster: \"ঘুরতে গিয়ে প্রকৃতির ক্ষতি করছেন না তো?\" over a hill-station landscape",
+  "status": "published",
+  "description": "Bengali travel-awareness poster encouraging travellers to protect plants and wildlife.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 1,
+  "featured": true,
+  "featuredOrder": 6
+}

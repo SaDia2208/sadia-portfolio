@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "company": "Leadmark Communications",
+      "role": "",
+      "start": "",
+      "end": "",
+      "location": "",
+      "responsibilities": [
+        "Social media content creation and graphic design",
+        "Digital marketing support",
+        "Product listings and e-commerce content operations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science and Engineering",
+      "institution": "Daffodil International University",
+      "result": "CGPA 3.42 / 4.00",
+      "year": ""
+    }
+  ]
+}

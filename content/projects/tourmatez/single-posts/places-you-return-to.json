@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Some places stay with you",
+  "image": "/assets/tourmatez/single-posts/places-you-return-to.webp",
+  "alt": "Bengali poster with a yellow bus on a mountain road: \"কিছু জায়গা ঘোরা শেষ হয়, ফিরে যাওয়ার ইচ্ছে শেষ হয় না\"",
+  "status": "published",
+  "description": "Bengali engagement poster inviting followers to name a place they want to visit again.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 2,
+  "featured": true,
+  "featuredOrder": 2
+}

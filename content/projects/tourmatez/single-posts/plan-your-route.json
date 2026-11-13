@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Right place, but which route?",
+  "image": "/assets/tourmatez/single-posts/plan-your-route.webp",
+  "alt": "Bengali poster with three day-by-day destination cards: \"জায়গা তো ঠিক, কিন্তু ঘুরবে কোন পথে?\"",
+  "status": "published",
+  "description": "Bengali app-promotion poster: see other travellers’ trip plans in Tourmatez for itinerary ideas.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 3,
+  "featured": false,
+  "featuredOrder": 100
+}

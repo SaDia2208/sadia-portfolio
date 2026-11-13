@@ -1,0 +1,15 @@
+{
+  "brand": "cubuzzle",
+  "category": "single-posts",
+  "title": "Speed vs control",
+  "image": "/assets/cubuzzle/single-posts/speed-vs-control.webp",
+  "alt": "Split poster comparing a speed cube and a control cube",
+  "status": "published",
+  "description": "Comparison post helping cubers choose between speed-focused and control-focused cubes.",
+  "contribution": "Social media graphic design",
+  "tools": [],
+  "tags": [],
+  "order": 3,
+  "featured": false,
+  "featuredOrder": 100
+}

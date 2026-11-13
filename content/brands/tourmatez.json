@@ -1,0 +1,19 @@
+{
+  "slug": "tourmatez",
+  "name": "Tourmatez",
+  "order": 4,
+  "industry": "Travel planning app",
+  "website": "https://tourmatez.com/",
+  "summary": "Bengali-language social media posters for a travel planning app, designed in Figma.",
+  "identity": "Green, yellow and white with travel destination photography, Bengali headline typography and app-focused, mobile-first compositions.",
+  "contribution": "Social media poster design in Figma. App screens that appear inside the posters belong to the Tourmatez product; my role was designing the posters.",
+  "theme": { "bg": "#0E6B3A", "fg": "#FFFFFF", "accent": "#FFD43B" },
+  "swatches": ["#0E6B3A", "#FFD43B", "#FFFFFF"],
+  "categoryNotes": {
+    "single-posts": "Travel inspiration, group trip planning, travel partner recruitment and app awareness posters.",
+    "carousels": "Multi-slide Tourmatez stories — added here as they are published.",
+    "web-banners": "Landscape website banners for Tourmatez.",
+    "videos": "Promotional videos and reels for Tourmatez.",
+    "campaigns": "App marketing campaigns, travel promotions and partner recruitment campaigns."
+  }
+}

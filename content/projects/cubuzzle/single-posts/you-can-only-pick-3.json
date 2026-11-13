@@ -1,0 +1,15 @@
+{
+  "brand": "cubuzzle",
+  "category": "single-posts",
+  "title": "You can only pick 3",
+  "image": "/assets/cubuzzle/single-posts/you-can-only-pick-3.webp",
+  "alt": "Speedcube poster with six numbered feature tiles: which three are you picking?",
+  "status": "published",
+  "description": "Interactive community post — followers choose three speedcube features and comment their numbers.",
+  "contribution": "Social media graphic design",
+  "tools": [],
+  "tags": [],
+  "order": 1,
+  "featured": true,
+  "featuredOrder": 3
+}

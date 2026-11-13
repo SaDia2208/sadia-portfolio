@@ -1,0 +1,19 @@
+{
+  "slug": "cubuzzle",
+  "name": "Cubuzzle",
+  "order": 2,
+  "industry": "Speedcubing products, education & competitions",
+  "website": "https://cubuzzle.com/",
+  "summary": "Social media design, banners, campaigns and AI-assisted video for a speedcubing store, learning platform and competition organiser.",
+  "identity": "Blue and yellow with colourful speedcube visuals, product-led layouts and educational content.",
+  "contribution": "Social media posts, educational carousels, e-commerce banners, campaign creatives and AI-assisted promotional videos.",
+  "theme": { "bg": "#1546C4", "fg": "#FFFFFF", "accent": "#FFD21F" },
+  "swatches": ["#1546C4", "#FFD21F", "#E8412F", "#22A45D", "#FFFFFF"],
+  "categoryNotes": {
+    "single-posts": "Speedcubing tips, product information, beginner guidance and community engagement graphics.",
+    "carousels": "Educational carousels, multi-slide cubing tutorials, speed and consistency tips.",
+    "web-banners": "Product-launch, course-registration, sale and e-commerce homepage banners.",
+    "videos": "AI-assisted promotional videos, speedcube product showcases and educational shorts.",
+    "campaigns": "Flash and mega sales, workshop promotions, seasonal campaigns and Cubuzzle Champions League Season 5."
+  }
+}
