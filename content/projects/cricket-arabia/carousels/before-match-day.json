@@ -1,0 +1,23 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "3 things before match day",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/before-match-day-1.webp",
+      "alt": "Cricketer in Cricket Arabia kit walking out of the tunnel: \"3 things every cricketer should do before match day\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/before-match-day-2.webp",
+      "alt": "Prepare before you perform: check your gear, stay hydrated, warm up properly"
+    }
+  ],
+  "description": "Two-slide carousel with match-day preparation tips: check your gear, stay hydrated, warm up properly.",
+  "contribution": "Carousel design",
+  "order": 5,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

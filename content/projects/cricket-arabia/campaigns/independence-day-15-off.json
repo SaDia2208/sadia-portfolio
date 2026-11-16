@@ -1,0 +1,23 @@
+{
+  "brand": "cricket-arabia",
+  "category": "campaigns",
+  "title": "Independence Day — flat 15% off",
+  "cover": "/assets/cricket-arabia/campaigns/independence-day-15-off.webp",
+  "objective": "One-day in-store offer: flat 15% off non-sale items for Independence Day.",
+  "items": [
+    {
+      "type": "image",
+      "file": "/assets/cricket-arabia/campaigns/independence-day-15-off.webp",
+      "caption": "Offer poster",
+      "alt": "Independence Day offer poster: MRF bat, SG gloves, pads and shoes in front of India Gate with \"Flat 15% off, one day only\""
+    }
+  ],
+  "description": "Festive offer poster combining the Indian flag colours with cricket gear.",
+  "contribution": "Campaign poster design",
+  "order": 1,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

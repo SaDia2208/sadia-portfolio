@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Lots of plans — now let's go together",
+  "image": "/assets/tourmatez/single-posts/plan-together.webp",
+  "alt": "Bengali poster of friends rafting through a green canyon: \"আড্ডায় অনেক প্ল্যান হলো, এবার একসঙ্গে ঘুরতে চলো!\"",
+  "status": "published",
+  "description": "Bengali app-promotion poster inviting friends to add their travel partners in Tourmatez and plan a trip together.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 4,
+  "featured": false,
+  "featuredOrder": 100
+}

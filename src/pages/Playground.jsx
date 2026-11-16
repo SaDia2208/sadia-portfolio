@@ -263,7 +263,7 @@ export default function Playground() {
       <h1 className="sr-only">The creative playground — an explorable wall of Sadia Akter's work</h1>
 
       {/* ---------- canvas ---------- */}
-      <div ref={stageRef} className="absolute inset-0 cursor-grab touch-none select-none active:cursor-grabbing"
+      <div ref={stageRef} data-cursor="drag" className="absolute inset-0 cursor-grab touch-none select-none active:cursor-grabbing"
         onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp}
         onPointerLeave={() => setHover(null)}>
         {/* dotted floor that moves with the world */}

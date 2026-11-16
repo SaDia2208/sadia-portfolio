@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "campaigns",
+  "title": "Learn to solve the Rubik's Cube — early bird offer",
+  "cover": "/assets/cubuzzle/campaigns/learn-to-solve-early-bird.webp",
+  "objective": "Early-bird registration for a kids' cubing course: AED 250 instead of AED 390, six 45-minute small-group sessions at Cubuzzle Lounge, Dubai.",
+  "items": [
+    {
+      "type": "image",
+      "file": "/assets/cubuzzle/campaigns/learn-to-solve-early-bird.webp",
+      "caption": "Website banner",
+      "alt": "Course banner: an instructor teaching children to solve cubes, with course details and an early-bird price of AED 250"
+    }
+  ],
+  "description": "Offer banner for the Cubuzzle online store.",
+  "contribution": "Campaign banner design",
+  "order": 1,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

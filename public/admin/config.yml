@@ -444,6 +444,22 @@
           "default": "9:16"
         },
         {
+          "label": "Video type",
+          "name": "videoType",
+          "widget": "select",
+          "default": "editing",
+          "options": [
+            {
+              "label": "AI Video Creation",
+              "value": "ai"
+            },
+            {
+              "label": "Video Editing & Reels",
+              "value": "editing"
+            }
+          ]
+        },
+        {
           "label": "Status",
           "name": "status",
           "widget": "select",
@@ -1125,6 +1141,22 @@
             "4:5"
           ],
           "default": "9:16"
+        },
+        {
+          "label": "Video type",
+          "name": "videoType",
+          "widget": "select",
+          "default": "editing",
+          "options": [
+            {
+              "label": "AI Video Creation",
+              "value": "ai"
+            },
+            {
+              "label": "Video Editing & Reels",
+              "value": "editing"
+            }
+          ]
         },
         {
           "label": "Status",
@@ -1810,6 +1842,22 @@
           "default": "9:16"
         },
         {
+          "label": "Video type",
+          "name": "videoType",
+          "widget": "select",
+          "default": "editing",
+          "options": [
+            {
+              "label": "AI Video Creation",
+              "value": "ai"
+            },
+            {
+              "label": "Video Editing & Reels",
+              "value": "editing"
+            }
+          ]
+        },
+        {
           "label": "Status",
           "name": "status",
           "widget": "select",
@@ -2493,6 +2541,22 @@
           "default": "9:16"
         },
         {
+          "label": "Video type",
+          "name": "videoType",
+          "widget": "select",
+          "default": "editing",
+          "options": [
+            {
+              "label": "AI Video Creation",
+              "value": "ai"
+            },
+            {
+              "label": "Video Editing & Reels",
+              "value": "editing"
+            }
+          ]
+        },
+        {
           "label": "Status",
           "name": "status",
           "widget": "select",
@@ -2759,6 +2823,8 @@
       "editor": {
         "preview": false
       },
+      "media_folder": "/public/assets/brand-logos",
+      "public_folder": "/assets/brand-logos",
       "fields": [
         {
           "label": "Slug (folder name, lowercase-with-dashes — never change later)",
@@ -2769,6 +2835,13 @@
           "label": "Brand name",
           "name": "name",
           "widget": "string"
+        },
+        {
+          "label": "Logo (PNG with transparent background, or SVG)",
+          "name": "logo",
+          "widget": "image",
+          "required": false,
+          "hint": "Shown in the logo reel on the homepage. A light/white version works best on the dark background."
         },
         {
           "label": "Order",
@@ -2964,6 +3037,12 @@
             {
               "label": "Email",
               "name": "email",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Phone",
+              "name": "phone",
               "widget": "string",
               "required": false
             },

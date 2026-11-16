@@ -1,0 +1,27 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "Batting practice with purpose",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/practice-smarter-1.webp",
+      "alt": "Two batters in the nets: \"Batting practice isn't just hitting balls\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/practice-smarter-2.webp",
+      "alt": "Three ways to practise smarter: shadow batting, footwork drills, throwdowns"
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/practice-smarter-3.webp",
+      "alt": "\"Practice with purpose. Perform with confidence.\" — which drill do you practise the most?"
+    }
+  ],
+  "description": "Three-slide carousel on smarter batting practice: the idea, three drills, and a question about which drill followers use.",
+  "contribution": "Carousel design",
+  "order": 3,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

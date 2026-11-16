@@ -1,11 +1,14 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
-import CategoryGallery from '../galleries/Galleries';
-import { BrandHero } from '../components/worlds';
-import { EmptyState, Icon, Reveal } from '../components/ui';
-import { artFor, brandBySlug, brands, categories, categoryBySlug, countFor, projectsFor } from '../lib/content';
+import { Icon } from '../components/ui';
+import { CategoryGallery, CategoryNav } from '../clean/Clean';
+import { brandBySlug, brands, categories, categoryBySlug, countFor, domainOf, projectsFor } from '../lib/content';
 import { useDocumentTitle } from '../lib/hooks';
 import NotFound from './NotFound';
 
+/**
+ * Brand page — one reusable layout for every brand.
+ * Header → category navigation (Daily Posts, Carousels, Banners, Videos & Reels, Campaigns) → gallery → next brand.
+ */
 export default function Brand() {
   const { brand: slug, category: catSlug } = useParams();
   const brand = brandBySlug[slug];
@@ -14,90 +17,74 @@ export default function Brand() {
   if (catSlug && !categoryBySlug[catSlug]) return <Navigate to={`/work/${slug}`} replace />;
 
   const index = brands.findIndex((b) => b.slug === slug);
-  const active = categoryBySlug[catSlug] || null; // null = "All" view
-  const filled = categories.filter((c) => countFor(slug, c.slug));
-  const highlight = artFor(slug, 1)[0];
-  const { accent } = brand.theme;
-  const tab = (on) => `flex shrink-0 items-baseline gap-2 whitespace-nowrap rounded-full px-4 py-2 text-xs font-bold uppercase tracking-wider transition ${on ? 'text-ink' : 'text-paper/60 hover:text-paper'}`;
-  const onStyle = { background: accent, color: brand.slug === 'active-arabia' || brand.slug === 'cricket-arabia' ? '#fff' : '#090909' };
+  // Default category: the first one that has work (usually Daily Posts).
+  const active = categoryBySlug[catSlug] || categories.find((c) => countFor(slug, c.slug)) || categories[0];
+  const list = projectsFor(slug, active.slug);
+  const total = countFor(slug);
 
   return (
     <>
-      <BrandHero brand={brand} index={index} />
-
-      {highlight && (
-        <section className="relative overflow-hidden bg-ink py-20 sm:py-28" aria-label="Featured artwork">
-          <span className="pointer-events-none absolute right-[10%] top-1/2 h-[60vmin] w-[60vmin] -translate-y-1/2 rounded-full opacity-20 blur-[120px]" style={{ background: accent }} aria-hidden="true" />
-          <div className="wrap relative grid items-center gap-10 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <p className="eyebrow" style={{ color: accent }}>Featured artwork</p>
-              <h2 className="display mt-4 text-5xl sm:text-7xl">{highlight.title}</h2>
-              {highlight.description && <p className="mt-4 text-paper/70">{highlight.description}</p>}
-              <Link to={highlight.url} className="mt-8 inline-flex items-center gap-2 border-b-2 pb-1 text-sm font-bold uppercase tracking-wider" style={{ borderColor: accent }}>View project <Icon name="arrowUpRight" className="h-4 w-4" /></Link>
+      {/* ---------- compact header: the collection opened from a card ---------- */}
+      <section className="shell pt-20 sm:pt-24" aria-labelledby="brand-title">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <Link to="/#work" className="label inline-flex items-center gap-2 transition-colors hover:text-text"><Icon name="arrowLeft" className="h-3.5 w-3.5" /> All brands</Link>
+          <BrandSwitcher current={slug} />
+        </div>
+        <div className="mt-8 grid items-end gap-6 lg:grid-cols-12">
+          <div className="flex items-center gap-5 sm:gap-7 lg:col-span-7">
+            {brand.logo && <img src={brand.logo} alt="" className="h-16 w-auto shrink-0 rounded-2xl ring-1 ring-white/10 sm:h-24" />}
+            <div className="min-w-0">
+              <p className="label flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full" style={{ background: brand.theme.accent }} />{String(index + 1).padStart(2, '0')} — {brand.industry}</p>
+              <h1 id="brand-title" className="mt-3 text-[clamp(2.25rem,6vw,4.75rem)] font-medium leading-[0.95] tracking-[-0.045em] text-text">{brand.name}</h1>
             </div>
-            <Reveal variant="wipe" className="lg:col-span-7 lg:col-start-6">
-              <Link to={highlight.url} className="block"><img src={highlight.cover} alt={highlight.title} loading="lazy" decoding="async" className="mx-auto block h-auto max-h-[82vh] w-auto max-w-full shadow-[0_60px_120px_-40px_rgba(0,0,0,0.9)]" /></Link>
-            </Reveal>
           </div>
-        </section>
-      )}
+          <div className="lg:col-span-5">
+            <p className="text-[15px] leading-relaxed text-muted">{brand.summary}</p>
+            <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
+              {total} {total === 1 ? 'piece' : 'pieces'}
+              {brand.website && <> · <a href={brand.website} target="_blank" rel="noreferrer" className="text-text underline-offset-4 hover:underline">{domainOf(brand.website)} ↗</a></>}
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Category selection */}
-      <div className="sticky top-0 z-40 border-b border-white/10 bg-ink/90 backdrop-blur-md">
-        <nav className="wrap no-scrollbar flex gap-1 overflow-x-auto pb-3 pt-16 sm:pt-[4.5rem]" aria-label={`${brand.name} collections`}>
-          <Link to={`/work/${slug}`} preventScrollReset aria-current={!active ? 'page' : undefined} className={tab(!active)} style={!active ? onStyle : undefined}>
-            All<span className="opacity-60">{countFor(slug)}</span>
-          </Link>
-          {categories.map((c, i) => {
-            const n = countFor(slug, c.slug);
-            const on = active?.slug === c.slug;
-            return (
-              <Link key={c.slug} to={`/work/${slug}/${c.slug}`} preventScrollReset aria-current={on ? 'page' : undefined}
-                className={`${tab(on)} ${!n && !on ? 'opacity-40' : ''}`} style={on ? onStyle : undefined}>
-                <span className="font-display text-[10px] opacity-70">0{i + 1}</span>{c.label}<span className="opacity-60">{n || 'soon'}</span>
-              </Link>
-            );
-          })}
-        </nav>
+      {/* ---------- categories ---------- */}
+      <div className="sticky top-14 z-30 mt-8 border-y border-line bg-ink/95 backdrop-blur-md sm:top-16">
+        <div className="shell py-3">
+          <CategoryNav brandSlug={slug} categories={categories} active={active.slug} />
+        </div>
       </div>
 
-      <div className="bg-ink">
-        {active ? (
-          <CollectionSection brand={brand} cat={active} index={categories.indexOf(active)} />
-        ) : filled.length ? (
-          filled.map((c) => <CollectionSection key={c.slug} brand={brand} cat={c} index={categories.indexOf(c)} linked />)
-        ) : (
-          <section className="wrap py-20"><EmptyState title="New work coming soon">{brand.name} projects will appear here once they are published.</EmptyState></section>
-        )}
-      </div>
+      <section className="shell pb-28 pt-10 sm:pt-14" aria-labelledby="cat-title">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4 sm:mb-10">
+          <div>
+            <h2 id="cat-title" className="text-2xl font-medium tracking-[-0.02em] text-text sm:text-3xl">{active.longLabel || active.label}</h2>
+            {brand.categoryNotes?.[active.slug] && <p className="mt-2 max-w-xl text-sm text-muted">{brand.categoryNotes[active.slug]}</p>}
+          </div>
+          <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted">{list.length} {list.length === 1 ? 'project' : 'projects'}</span>
+        </div>
+        <CategoryGallery key={`${slug}-${active.slug}`} layout={active.layout} projects={list} brand={brand} />
+      </section>
 
       <NextBrand current={index} />
     </>
   );
 }
 
-/** One collection (category) of a brand, using the gallery made for that format. */
-function CollectionSection({ brand, cat, index, linked = false }) {
-  const list = projectsFor(brand.slug, cat.slug);
+/** Small logo row to jump between the four brands — echoes the logo reel on the homepage. */
+function BrandSwitcher({ current }) {
   return (
-    <section className="relative scroll-mt-32 border-b border-white/10 pb-16 pt-24 sm:pb-24 sm:pt-28" aria-labelledby={`cat-${cat.slug}`}>
-      <div className="wrap">
-        <div className="mb-14 grid items-end gap-6 md:grid-cols-12">
-          <div className="md:col-span-8">
-            <p className="font-display text-2xl" style={{ color: brand.theme.accent }}>{String(index + 1).padStart(2, '0')} <span className="text-paper/40">/ {list.length} piece{list.length === 1 ? '' : 's'}</span></p>
-            <h2 id={`cat-${cat.slug}`} className="display mt-2 text-[13vw] leading-[0.85] md:text-[7vw]">
-              <span className="line-mask" key={cat.slug}><span>{cat.longLabel || cat.label}</span></span>
-            </h2>
-          </div>
-          <div className="md:col-span-4">
-            {brand.categoryNotes?.[cat.slug] && <p className="max-w-sm text-paper/60">{brand.categoryNotes[cat.slug]}</p>}
-            {linked && <Link to={`/work/${brand.slug}/${cat.slug}`} className="mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-paper/70 hover:text-paper">Only this collection <Icon name="arrowRight" className="h-4 w-4" /></Link>}
-          </div>
-        </div>
-        <CategoryGallery key={`${brand.slug}-${cat.slug}`} projects={list} layout={cat.layout} accent={brand.theme.accent}
-          emptyNote={`${brand.name} ${cat.label.toLowerCase()} will appear here once they are published.`} />
-      </div>
-    </section>
+    <nav aria-label="Brands" className="flex items-center gap-2">
+      {brands.map((b) => {
+        const on = b.slug === current;
+        return (
+          <Link key={b.slug} to={`/work/${b.slug}`} aria-label={b.name} aria-current={on ? 'page' : undefined} title={b.name}
+            className={`overflow-hidden rounded-lg ring-1 transition-all duration-300 ${on ? 'ring-white/60' : 'opacity-45 grayscale ring-white/10 hover:opacity-100 hover:grayscale-0'}`}>
+            {b.logo ? <img src={b.logo} alt="" className="h-8 w-auto sm:h-9" /> : <span className="block px-3 py-2 font-mono text-[10px] uppercase text-text">{b.name}</span>}
+          </Link>
+        );
+      })}
+    </nav>
   );
 }
 
@@ -105,15 +92,19 @@ function NextBrand({ current }) {
   const next = brands[(current + 1) % brands.length];
   if (!next || brands.length < 2) return null;
   return (
-    <Link to={`/work/${next.slug}`} className="group relative block overflow-hidden" style={{ background: next.theme.bg, color: next.theme.fg }}>
-      <div className="wrap relative py-20 sm:py-28">
-        <p className="eyebrow opacity-70">Next world →</p>
-        <p className="display mt-4 text-[18vw] leading-[0.82] transition-transform duration-700 ease-[var(--ease-out-expo)] group-hover:translate-x-6 lg:text-[11vw]">{next.name}</p>
-        <span className="absolute bottom-20 right-6 grid h-20 w-20 place-items-center rounded-full transition-transform duration-500 group-hover:rotate-45 sm:right-10 sm:h-28 sm:w-28"
-          style={{ background: next.theme.accent, color: next.theme.bg }}>
-          <Icon name="arrowUpRight" className="h-8 w-8" />
+    <section className="shell pb-24">
+      <Link to={`/work/${next.slug}`} className="group panel flex items-center justify-between gap-6 p-6 transition-colors hover:border-white/20 sm:p-10">
+        <div className="flex items-center gap-5 sm:gap-7">
+          {next.logo && <img src={next.logo} alt="" className="h-14 w-auto shrink-0 rounded-xl ring-1 ring-white/10 sm:h-20" />}
+          <div>
+          <p className="label">Next brand</p>
+          <p className="mt-3 text-3xl font-medium tracking-[-0.03em] text-text sm:text-5xl">{next.name}</p>
+          </div>
+        </div>
+        <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-line text-muted transition-all group-hover:rotate-45 group-hover:border-white/30 group-hover:text-text sm:h-14 sm:w-14">
+          <Icon name="arrowUpRight" className="h-5 w-5" />
         </span>
-      </div>
-    </Link>
+      </Link>
+    </section>
   );
 }

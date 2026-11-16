@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "campaigns",
+  "title": "White Friday — up to 60% off",
+  "cover": "/assets/cubuzzle/campaigns/white-friday-60-off.webp",
+  "objective": "White Friday sale, 18–30 November 2026: up to 60% off six speed cubes and a smart timer.",
+  "items": [
+    {
+      "type": "image",
+      "file": "/assets/cubuzzle/campaigns/white-friday-60-off.webp",
+      "caption": "Offer poster",
+      "alt": "White Friday poster with six discounted products on podiums, including the GAN16 Maglev MAX Aqualis, QiYi Timer 2.0 and MoYu WeiLong Pyraminx"
+    }
+  ],
+  "description": "Sale poster showing each product with its old and new price.",
+  "contribution": "Campaign poster design",
+  "order": 4,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

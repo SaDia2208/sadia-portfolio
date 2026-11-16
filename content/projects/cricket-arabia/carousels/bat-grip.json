@@ -1,0 +1,27 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "Is your bat grip holding you back?",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/bat-grip-1.webp",
+      "alt": "Close-up of a blue bat grip: \"Is your bat grip holding you back?\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/bat-grip-2.webp",
+      "alt": "Three signs you need a new grip: worn-out texture, cracks or tears, slippery feel"
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/bat-grip-3.webp",
+      "alt": "Five replacement grips beside a bat: \"A fresh grip. Better control. Better confidence.\""
+    }
+  ],
+  "description": "Three-slide product-education carousel about bat grips: the question, three signs of a worn grip, and new grips to choose from.",
+  "contribution": "Carousel design",
+  "order": 4,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

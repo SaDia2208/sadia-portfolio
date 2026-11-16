@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "campaigns",
+  "title": "Mega Sale — up to 50% off",
+  "cover": "/assets/cubuzzle/campaigns/mega-sale-50-off.webp",
+  "objective": "Limited-time sale on novelty cubes, speed cubes, T-shirts and puzzles, up to 50% off.",
+  "items": [
+    {
+      "type": "image",
+      "file": "/assets/cubuzzle/campaigns/mega-sale-50-off.webp",
+      "caption": "Website banner",
+      "alt": "Mega Sale banner with novelty cubes, speed cubes, T-shirts and a jigsaw puzzle, \"Up to 50% off\""
+    }
+  ],
+  "description": "Offer banner for the Cubuzzle online store.",
+  "contribution": "Campaign banner design",
+  "order": 2,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

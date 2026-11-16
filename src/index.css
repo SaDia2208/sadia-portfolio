@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 /* ============================================================
-   CREATIVE PLAYGROUND — design system
+   CLEAN PREMIUM — current design system (2026-11 redesign)
+   Type:   Geist (UI + headings) · Geist Mono (labels) · Instrument Serif italic (accent words) · Hind Siliguri (Bangla)
+   Colour: near-black canvas, charcoal panels, hairline borders, soft white text, one quiet accent
+   The older "Creative Playground" tokens below are kept for pages that still use them.
+   ============================================================
+   CREATIVE PLAYGROUND — previous design system
    Type:   Anton (condensed display) · Instrument Serif (editorial) · Manrope (body) · Hind Siliguri (Bangla)
    Colour: near-black canvas, warm white, electric lime, vivid coral, electric purple
    Grid:   12 columns, 16px gutters on mobile → 40px on desktop
    ============================================================ */
 @theme {
-  --color-ink: #090909;
+  --color-ink: #0b0b0c;
+  --color-panel: #121214;
+  --color-panel-2: #18181b;
+  --color-line: rgb(255 255 255 / 0.08);
+  --color-text: #ededed;
+  --color-muted: #8b8b92;
+  --color-accent: #8b8bff;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --color-ash: #161616;
   --color-ash-2: #222220;
   --color-paper: #f5f3eb;
@@ -18,7 +30,7 @@
 
   --font-display: "Anton", "Hind Siliguri", Impact, "Arial Narrow", sans-serif;
   --font-serif: "Instrument Serif", "Hind Siliguri", Georgia, serif;
-  --font-sans: "Manrope", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Geist", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -47,6 +59,10 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px currentColor;
 }
+/* clean system utilities */
+@utility label { @apply font-mono text-[11px] font-medium uppercase tracking-[0.14em] text-muted; }
+@utility panel { @apply rounded-2xl border border-line bg-panel; }
+@utility shell { @apply mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-8; }
 @utility chip { @apply inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors; }
 @utility no-scrollbar {
   scrollbar-width: none;
@@ -122,4 +138,19 @@
   .wipe { clip-path: none; }
   .marquee, .marquee-rev, .spin-slow, .float, .bob { animation: none !important; }
   [data-parallax] { transform: none !important; }
+}
+
+/* Brand folders: posters lift out of the folder on hover */
+.folder:hover [data-paper], .folder:focus-visible [data-paper] { transform: translateY(var(--lift)) rotate(0deg) !important; }
+
+/* Floating studio: gently drifting work cards + soft section snapping on the homepage */
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)); }
+  50% { transform: translate3d(0, -14px, 0) rotate(calc(var(--r, 0deg) + 1.2deg)); }
+}
+.drift { animation: drift var(--dur, 7s) ease-in-out var(--delay, 0s) infinite; transform: rotate(var(--r, 0deg)); }
+html.snap-home { scroll-snap-type: y proximity; }
+@media (prefers-reduced-motion: reduce) {
+  .drift { animation: none !important; }
+  html.snap-home { scroll-snap-type: none; }
 }

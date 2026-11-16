@@ -1,0 +1,27 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "Hitting well but not finding gaps?",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/finding-the-gaps-1.webp",
+      "alt": "Batter driving straight to a fielder: \"Hitting well but not finding gaps?\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/finding-the-gaps-2.webp",
+      "alt": "Three reasons shots find fielders: poor placement, late ball reading, wrong shot selection"
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/finding-the-gaps-3.webp",
+      "alt": "\"Great batters don't just hit hard. They find the gaps\" — timing plus placement equals more runs"
+    }
+  ],
+  "description": "Three-slide carousel on shot placement: the problem, three reasons shots find fielders, and a power-vs-placement question.",
+  "contribution": "Carousel design",
+  "order": 2,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

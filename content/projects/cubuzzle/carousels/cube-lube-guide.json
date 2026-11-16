@@ -1,0 +1,27 @@
+{
+  "brand": "cubuzzle",
+  "category": "carousels",
+  "title": "Cube lube does more than make your cube faster",
+  "slides": [
+    {
+      "image": "/assets/cubuzzle/carousels/cube-lube-guide-1.webp",
+      "alt": "Green lube dripping into an opened 3x3 cube: \"Cube lube does more than make your cube faster.\""
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/cube-lube-guide-2.webp",
+      "alt": "Exploded cube diagram: one lube, different feel — speed, smoothness, control, turning feel and sound"
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/cube-lube-guide-3.webp",
+      "alt": "Five lubes compared — Galaxy, Stardust, Calm, Silk, Nebula: \"Choose the right lube for your cube\""
+    }
+  ],
+  "description": "Three-slide product-education carousel about cube lubricants: why lube matters, what it changes, and which lube to choose.",
+  "contribution": "Carousel design",
+  "order": 3,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

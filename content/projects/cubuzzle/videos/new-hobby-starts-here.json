@@ -1,0 +1,18 @@
+{
+  "brand": "cubuzzle",
+  "category": "videos",
+  "title": "A new hobby starts here",
+  "video": "/assets/cubuzzle/videos/new-hobby-starts-here.mp4",
+  "videoUrl": "",
+  "poster": "/assets/cubuzzle/videos/new-hobby-starts-here-poster.webp",
+  "aspect": "9:16",
+  "videoType": "ai",
+  "description": "AI-animated ad for Cubuzzle online cubing sessions: a mother and child with a cube, inviting parents to book a free demo.",
+  "contribution": "AI video",
+  "order": 1,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

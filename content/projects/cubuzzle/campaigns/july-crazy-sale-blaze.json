@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "campaigns",
+  "title": "July Crazy Sale Blaze",
+  "cover": "/assets/cubuzzle/campaigns/july-crazy-sale-blaze.webp",
+  "objective": "Summer sale offer: a free puppet cube on orders above AED 150.",
+  "items": [
+    {
+      "type": "image",
+      "file": "/assets/cubuzzle/campaigns/july-crazy-sale-blaze.webp",
+      "caption": "Website banner",
+      "alt": "July Crazy Sale Blaze banner with flames and a free puppet cube offer on orders above AED 150"
+    }
+  ],
+  "description": "Offer banner for the Cubuzzle online store.",
+  "contribution": "Campaign banner design",
+  "order": 3,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

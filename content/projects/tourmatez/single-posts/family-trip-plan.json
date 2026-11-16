@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Plan the family trip with Tourmatez",
+  "image": "/assets/tourmatez/single-posts/family-trip-plan.webp",
+  "alt": "Bengali poster of a father and child walking on a beach at sunset: \"Family Trip-প্ল্যান হোক Tourmatez এর সঙ্গে!\"",
+  "status": "published",
+  "description": "Bengali engagement poster asking followers to tag their family trip planner.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 7,
+  "featured": false,
+  "featuredOrder": 100
+}

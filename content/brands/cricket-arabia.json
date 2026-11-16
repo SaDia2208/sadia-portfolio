@@ -1,14 +1,23 @@
 {
   "slug": "cricket-arabia",
   "name": "Cricket Arabia",
+  "logo": "/assets/brand-logos/cricket-arabia.png",
   "order": 1,
   "industry": "Cricket equipment & sports e-commerce",
   "website": "",
-  "summary": "Social media graphic design and promotional content for a cricket equipment and sports e-commerce brand.",
+  "summary": "Social media post design and promotional content for a cricket equipment and sports e-commerce brand.",
   "identity": "Strong red, black and white sports-inspired design, cinematic compositions, bold typography and product-focused presentation.",
-  "contribution": "Social media graphic design, carousels, website banners, promotional campaigns and AI-assisted video content.",
-  "theme": { "bg": "#0F0F0F", "fg": "#FFFFFF", "accent": "#E3222B" },
-  "swatches": ["#E3222B", "#0F0F0F", "#FFFFFF"],
+  "contribution": "Social media posts, carousels, website banners, promotional campaigns and AI-assisted video content.",
+  "theme": {
+    "bg": "#0F0F0F",
+    "fg": "#FFFFFF",
+    "accent": "#E3222B"
+  },
+  "swatches": [
+    "#E3222B",
+    "#0F0F0F",
+    "#FFFFFF"
+  ],
   "categoryNotes": {
     "single-posts": "Cricket education, product-focused graphics, audience engagement and motivational sports creatives.",
     "carousels": "Multi-slide educational graphics — techniques, training tips, myth vs. reality and product knowledge.",

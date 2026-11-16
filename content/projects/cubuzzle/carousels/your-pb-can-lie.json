@@ -1,0 +1,27 @@
+{
+  "brand": "cubuzzle",
+  "category": "carousels",
+  "title": "Your PB can lie to you",
+  "slides": [
+    {
+      "image": "/assets/cubuzzle/carousels/your-pb-can-lie-1.webp",
+      "alt": "Cube in front of a timer showing 5.32: \"Your PB can lie to you. One fast solve is not your real speed.\""
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/your-pb-can-lie-2.webp",
+      "alt": "Track your averages, not just your PB: PB, Ao5, Ao12 and Ao100 explained"
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/your-pb-can-lie-3.webp",
+      "alt": "\"Stop chasing one lucky solve. Build a speed you can repeat.\" — what's your current Ao5?"
+    }
+  ],
+  "description": "Three-slide educational carousel on tracking averages instead of a single best time, ending with a question for followers.",
+  "contribution": "Carousel design",
+  "order": 2,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

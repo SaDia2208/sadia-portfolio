@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "carousels",
+  "title": "Design the next speedcube",
+  "slides": [
+    {
+      "image": "/assets/cubuzzle/carousels/design-the-next-speedcube-1.webp",
+      "alt": "Clear speedcube with six glowing colour swatches: \"Design the next speedcube. One rule: no standard 6-colour scheme.\""
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/design-the-next-speedcube-2.webp",
+      "alt": "Clear cube with six empty colour boxes: \"Your cube. Your colors. Pick 6 colors. What's your color combo?\""
+    }
+  ],
+  "description": "Two-slide engagement carousel inviting followers to design their own colour scheme on a clear cube.",
+  "contribution": "Carousel design",
+  "order": 1,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "cubuzzle",
+  "category": "videos",
+  "title": "Online cubing sessions",
+  "video": "/assets/cubuzzle/videos/online-cubing-sessions.mp4",
+  "videoUrl": "",
+  "poster": "/assets/cubuzzle/videos/online-cubing-sessions-poster.webp",
+  "aspect": "4:5",
+  "videoType": "editing",
+  "description": "Promo video for 45-minute one-to-one online cubing sessions for beginners and intermediate cubers, ending with a free-demo call to action.",
+  "contribution": "Video editing",
+  "order": 3,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

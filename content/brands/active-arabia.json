@@ -1,14 +1,25 @@
 {
   "slug": "active-arabia",
   "name": "Active Arabia",
+  "logo": "/assets/brand-logos/active-arabia.png",
   "order": 3,
   "industry": "Creative toys & educational play products",
   "website": "https://activearabia.ae/",
   "summary": "Regular branded social media content for a creative toy and educational play brand.",
   "identity": "Playful, colourful, approachable and product-focused.",
   "contribution": "Branded social media content, product storytelling and real-life product showcase videos.",
-  "theme": { "bg": "#FFE7D1", "fg": "#1E1A17", "accent": "#FF5A36" },
-  "swatches": ["#FF5A36", "#FFC23A", "#3BB0E8", "#5BC27A", "#FFE7D1"],
+  "theme": {
+    "bg": "#FFE7D1",
+    "fg": "#1E1A17",
+    "accent": "#FF5A36"
+  },
+  "swatches": [
+    "#FF5A36",
+    "#FFC23A",
+    "#3BB0E8",
+    "#5BC27A",
+    "#FFE7D1"
+  ],
   "categoryNotes": {
     "single-posts": "Creative toy product visuals, real-life product use, lifestyle imagery and branded content.",
     "carousels": "Multi-slide product storytelling, educational toy highlights and feature sequences.",

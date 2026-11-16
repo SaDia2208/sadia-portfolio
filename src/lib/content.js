@@ -91,6 +91,7 @@ function normalize(raw, filePath) {
     title: raw.title || slug,
     description: raw.description || '',
     contribution: raw.contribution || '',
+    videoType: raw.videoType || '', // 'ai' | 'editing' (Videos & Reels only)
     objective: raw.objective || '',
     date: raw.date || '',
     tags: (raw.tags || []).filter(Boolean),

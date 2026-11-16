@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Tour agency? Partner with Tourmatez",
+  "image": "/assets/tourmatez/single-posts/tour-agency-partner.webp",
+  "alt": "Bengali poster of a guide showing travellers the hills beside a phone listing tour packages: \"ট্যুর এজেন্সি?\"",
+  "status": "published",
+  "description": "Bengali partner-recruitment poster inviting tour agencies to reach new travellers through Tourmatez.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 8,
+  "featured": false,
+  "featuredOrder": 100
+}

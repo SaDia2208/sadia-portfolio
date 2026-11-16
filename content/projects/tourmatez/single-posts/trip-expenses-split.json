@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "The trip ends — but the maths doesn't?",
+  "image": "/assets/tourmatez/single-posts/trip-expenses-split.webp",
+  "alt": "Bengali before-and-after poster: a handwritten expense list versus the Tourmatez expense-split screen",
+  "status": "published",
+  "description": "Bengali app-promotion poster comparing manual trip-expense tracking with splitting costs in the app.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 9,
+  "featured": false,
+  "featuredOrder": 100
+}

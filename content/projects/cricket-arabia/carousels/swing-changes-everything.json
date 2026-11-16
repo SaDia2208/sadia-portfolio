@@ -1,0 +1,27 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "Swing changes everything",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/swing-changes-everything-1.webp",
+      "alt": "Bowler releasing the ball: \"It looks like a normal ball… until it leaves the bowler's hand\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/swing-changes-everything-2.webp",
+      "alt": "Outswing, inswing and late movement shown as three ball paths into Cricket Arabia stumps"
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/swing-changes-everything-3.webp",
+      "alt": "Ball swinging toward the stumps: \"How well can you read swing? Inswing or outswing?\""
+    }
+  ],
+  "description": "Three-slide carousel about swing bowling: a hook, the three kinds of movement, and a question for followers.",
+  "contribution": "Carousel design",
+  "order": 1,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

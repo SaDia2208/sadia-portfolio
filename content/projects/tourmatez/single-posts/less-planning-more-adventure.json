@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Less planning, more adventure",
+  "image": "/assets/tourmatez/single-posts/less-planning-more-adventure.webp",
+  "alt": "Bengali poster with a phone showing trip itineraries above green hills: \"কম প্ল্যানিং, বেশি অ্যাডভেঞ্চার।\"",
+  "status": "published",
+  "description": "Bengali app-promotion poster: the whole trip plan in one place.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 6,
+  "featured": false,
+  "featuredOrder": 100
+}

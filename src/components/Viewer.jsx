@@ -131,14 +131,14 @@ export default function Viewer({ items, index, onIndex, onClose, mode = 'gallery
 
   return createPortal(
     <div ref={dialogRef} role="dialog" aria-modal="true" aria-label={`${project.title} — viewer`}
-      className="page-in fixed inset-0 z-[100] flex flex-col bg-[#0c0c0c] text-white">
+      className="page-in fixed inset-0 z-[100] flex flex-col bg-ink text-white">
       {/* Top bar */}
       <div className="flex items-center gap-3 border-b border-white/10 px-3 py-2.5 sm:px-5">
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm font-semibold">{project.title}</p>
           <p className="truncate text-xs text-white/50">
             {brand?.name} · {cat?.label}
-            {total > 1 && <span className="ml-2 tabular-nums text-lime" aria-live="polite">{mode === 'slides' ? 'Slide ' : ''}{index + 1} / {total}</span>}
+            {total > 1 && <span className="ml-2 tabular-nums text-text" aria-live="polite">{mode === 'slides' ? 'Slide ' : ''}{index + 1} / {total}</span>}
           </p>
         </div>
         {isImage && (
@@ -147,7 +147,7 @@ export default function Viewer({ items, index, onIndex, onClose, mode = 'gallery
         {canFs && <ToolButton label={isFs ? 'Exit fullscreen (F)' : 'Fullscreen (F)'} onClick={toggleFs} icon={isFs ? 'shrink' : 'expand'} />}
         <ToolButton label="Project details (I)" onClick={() => setShowInfo((v) => !v)} icon="info" active={showInfo} always />
         <button ref={closeRef} onClick={onClose} aria-label="Close viewer (Esc)"
-          className="ml-1 grid h-10 w-10 place-items-center rounded-full bg-white text-ink transition hover:bg-lime">
+          className="ml-1 grid h-10 w-10 place-items-center rounded-full bg-white text-ink transition hover:bg-text">
           <Icon name="close" />
         </button>
       </div>
@@ -182,7 +182,7 @@ export default function Viewer({ items, index, onIndex, onClose, mode = 'gallery
                   {items.map((_, i) => (
                     <button key={i} role="tab" aria-selected={i === index} aria-label={`Go to ${mode === 'slides' ? 'slide' : 'item'} ${i + 1}`}
                       onClick={() => onIndex(i)}
-                      className={`h-1.5 rounded-full transition-all duration-300 ${i === index ? 'w-7 bg-lime' : 'w-1.5 bg-white/30 hover:bg-white/60'}`} />
+                      className={`h-1.5 rounded-full transition-all duration-300 ${i === index ? 'w-7 bg-text' : 'w-1.5 bg-white/30 hover:bg-white/60'}`} />
                   ))}
                 </div>
               )}
@@ -192,14 +192,14 @@ export default function Viewer({ items, index, onIndex, onClose, mode = 'gallery
 
         {/* Info panel */}
         {showInfo && (
-          <aside className="absolute inset-x-0 bottom-0 z-10 max-h-[55%] overflow-y-auto rounded-t-3xl border-t border-white/10 bg-[#161615] p-6 lg:static lg:max-h-none lg:w-[340px] lg:rounded-none lg:border-l lg:border-t-0">
+          <aside className="absolute inset-x-0 bottom-0 z-10 max-h-[55%] overflow-y-auto rounded-t-3xl border-t border-white/10 bg-panel p-6 lg:static lg:max-h-none lg:w-[340px] lg:rounded-none lg:border-l lg:border-t-0">
             <div className="mb-4 flex items-start justify-between gap-3 lg:hidden">
-              <span className="eyebrow text-lime">Details</span>
+              <span className="eyebrow text-text">Details</span>
               <button onClick={() => setShowInfo(false)} className="text-xs text-white/60 underline">Hide</button>
             </div>
             <ProjectDetails project={project} dark />
             {projectLink && (
-              <Link to={project.url} onClick={onClose} className="mt-6 inline-flex items-center gap-2 rounded-full bg-lime px-5 py-3 text-xs font-bold uppercase tracking-wider text-ink">
+              <Link to={project.url} onClick={onClose} className="mt-6 inline-flex items-center gap-2 rounded-full bg-text px-5 py-3 text-xs font-bold uppercase tracking-wider text-ink">
                 Open project page <Icon name="arrowUpRight" className="h-4 w-4" />
               </Link>
             )}
@@ -241,7 +241,7 @@ function MediaView({ media, imgRef, zoom, title }) {
 function ToolButton({ label, onClick, icon, active, always = false }) {
   return (
     <button onClick={onClick} aria-label={label} title={label} aria-pressed={active}
-      className={`${always ? 'grid' : 'hidden sm:grid'} h-10 w-10 place-items-center rounded-full border transition ${active ? 'border-lime text-lime' : 'border-white/15 text-white/80 hover:border-white/50 hover:text-white'}`}>
+      className={`${always ? 'grid' : 'hidden sm:grid'} h-10 w-10 place-items-center rounded-full border transition ${active ? 'border-text text-text' : 'border-white/15 text-white/80 hover:border-white/50 hover:text-white'}`}>
       <Icon name={icon} />
     </button>
   );
@@ -250,7 +250,7 @@ function ToolButton({ label, onClick, icon, active, always = false }) {
 function NavButton({ side, disabled, onClick }) {
   return (
     <button onClick={onClick} disabled={disabled} aria-label={side === 'left' ? 'Previous' : 'Next'}
-      className={`absolute top-1/2 z-[5] grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-lime hover:text-ink disabled:pointer-events-none disabled:opacity-0 sm:h-14 sm:w-14 ${side === 'left' ? 'left-2 sm:left-5' : 'right-2 sm:right-5'}`}>
+      className={`absolute top-1/2 z-[5] grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-text hover:text-ink disabled:pointer-events-none disabled:opacity-0 sm:h-14 sm:w-14 ${side === 'left' ? 'left-2 sm:left-5' : 'right-2 sm:right-5'}`}>
       <Icon name={side === 'left' ? 'arrowLeft' : 'arrowRight'} />
     </button>
   );

@@ -1,0 +1,15 @@
+{
+  "brand": "cubuzzle",
+  "category": "single-posts",
+  "title": "The 5-second cube test",
+  "image": "/assets/cubuzzle/single-posts/five-second-test.webp",
+  "alt": "MoYu cube on a desk with three checks: corner cutting, turning sound and stability",
+  "description": "Educational post with a quick three-point test for judging a speed cube.",
+  "contribution": "Social media post design",
+  "order": 5,
+  "status": "published",
+  "date": "2026-11-17",
+  "tools": [],
+  "tags": [],
+  "featured": false
+}

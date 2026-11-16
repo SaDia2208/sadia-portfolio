@@ -1,0 +1,19 @@
+{
+  "brand": "tourmatez",
+  "category": "single-posts",
+  "title": "Not \"someday\" — book the ticket",
+  "image": "/assets/tourmatez/single-posts/not-someday-book-the-ticket.webp",
+  "alt": "Bengali poster of friends in kayaks on a lake: \"এইবার ‘একদিন যাবো’ নয়, টিকিট কাটার গল্প হোক!\"",
+  "status": "published",
+  "description": "Bengali poster encouraging groups to set a date and travel together with Tourmatez.",
+  "contribution": "Social media poster design in Figma",
+  "tools": [
+    "Figma"
+  ],
+  "tags": [
+    "Bengali"
+  ],
+  "order": 5,
+  "featured": false,
+  "featuredOrder": 100
+}
