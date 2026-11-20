@@ -1,0 +1,23 @@
+{
+  "brand": "cubuzzle",
+  "category": "carousels",
+  "title": "Beyond the 3x3 — discover the Megaminx",
+  "slides": [
+    {
+      "image": "/assets/cubuzzle/carousels/discover-megaminx-1.webp",
+      "alt": "GAN Megaminx glowing on a podium: \"Beyond the 3x3. Discover the world of Megaminx.\""
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/discover-megaminx-2.webp",
+      "alt": "Megaminx vs 3x3 comparison: 6 faces and 20 pieces versus 12 faces and 50 pieces"
+    }
+  ],
+  "description": "Two-slide product-education carousel introducing the Megaminx and comparing it with the 3x3.",
+  "contribution": "Carousel design",
+  "status": "published",
+  "date": "2026-11-20",
+  "tools": [],
+  "tags": [],
+  "order": 4,
+  "featured": false
+}

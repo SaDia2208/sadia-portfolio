@@ -1,0 +1,27 @@
+{
+  "brand": "cubuzzle",
+  "category": "carousels",
+  "title": "Cubing red flags",
+  "slides": [
+    {
+      "image": "/assets/cubuzzle/carousels/cubing-red-flags-1.webp",
+      "alt": "Swift Block cube beside a red flag: \"Cubing red flag — 3 habits holding you back.\""
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/cubing-red-flags-2.webp",
+      "alt": "Three red flags: you blame the cube, you change cubes every week, you skip the basics"
+    },
+    {
+      "image": "/assets/cubuzzle/carousels/cubing-red-flags-3.webp",
+      "alt": "\"The real solution is practice.\" — less excuses, more progress, and a comment prompt"
+    }
+  ],
+  "description": "Three-slide engagement carousel: three habits holding cubers back, and the fix.",
+  "contribution": "Carousel design",
+  "status": "published",
+  "date": "2026-11-20",
+  "tools": [],
+  "tags": [],
+  "order": 5,
+  "featured": false
+}

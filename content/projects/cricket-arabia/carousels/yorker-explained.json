@@ -1,0 +1,27 @@
+{
+  "brand": "cricket-arabia",
+  "category": "carousels",
+  "title": "Why is a yorker so hard to hit?",
+  "slides": [
+    {
+      "image": "/assets/cricket-arabia/carousels/yorker-explained-1.webp",
+      "alt": "Bowler releasing a yorker toward the stumps: \"Why is a yorker so hard to hit? It's not just speed. It's science.\""
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/yorker-explained-2.webp",
+      "alt": "Ball path from release to the yorker zone with three reasons: late dip, perfect accuracy, speed and timing"
+    },
+    {
+      "image": "/assets/cricket-arabia/carousels/yorker-explained-3.webp",
+      "alt": "\"A great yorker isn't just fast. It's precise.\" — skill, control, strategy, and a question for followers"
+    }
+  ],
+  "description": "Three-slide educational carousel on the yorker: the question, what makes it deadly, and what makes a great one.",
+  "contribution": "Carousel design",
+  "status": "published",
+  "date": "2026-11-20",
+  "tools": [],
+  "tags": [],
+  "order": 6,
+  "featured": false
+}
